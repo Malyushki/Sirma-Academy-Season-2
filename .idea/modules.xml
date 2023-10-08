@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SA_15.02.2023_ArrayLists/SA_15.02.2023_ArrayLists.iml" filepath="$PROJECT_DIR$/SA_15.02.2023_ArrayLists/SA_15.02.2023_ArrayLists.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SA_18.02.2023_charsAndStrings/SA_18.02.2023_charsAndStrings.iml" filepath="$PROJECT_DIR$/SA_18.02.2023_charsAndStrings/SA_18.02.2023_charsAndStrings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SA_21.02.2023_IOFiles/SA_21.02.2023_IOFiles.iml" filepath="$PROJECT_DIR$/SA_21.02.2023_IOFiles/SA_21.02.2023_IOFiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SA_22.02.2023_IOFilesExceptions/SA_22.02.2023_IOFilesExceptions.iml" filepath="$PROJECT_DIR$/SA_22.02.2023_IOFilesExceptions/SA_22.02.2023_IOFilesExceptions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SA_24.01.2023_Classes/SA_24.01.2023_Classes.iml" filepath="$PROJECT_DIR$/SA_24.01.2023_Classes/SA_24.01.2023_Classes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SA_25022023_RegularExpressions/SA_25022023_RegularExpressions.iml" filepath="$PROJECT_DIR$/SA_25022023_RegularExpressions/SA_25022023_RegularExpressions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SA_26022023_classRandom/SA_26022023_classRandom.iml" filepath="$PROJECT_DIR$/SA_26022023_classRandom/SA_26022023_classRandom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SA_28012023_Constructors/SA_28012023_Constructors.iml" filepath="$PROJECT_DIR$/SA_28012023_Constructors/SA_28012023_Constructors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SA_28022023_TimeAndDate/SA_28022023_TimeAndDate.iml" filepath="$PROJECT_DIR$/SA_28022023_TimeAndDate/SA_28022023_TimeAndDate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SA_31012023_MultidimensionalArrays/SA_31012023_MultidimensionalArrays.iml" filepath="$PROJECT_DIR$/SA_31012023_MultidimensionalArrays/SA_31012023_MultidimensionalArrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sirma-Academy-Season-2.iml" filepath="$PROJECT_DIR$/Sirma-Academy-Season-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SAx_FirstSteps_DataTypesAndETC/Workshop05/Workshop05.iml" filepath="$PROJECT_DIR$/SAx_FirstSteps_DataTypesAndETC/Workshop05/Workshop05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SAx_FirstSteps_DataTypesAndETC/Workshop4/Workshop4.iml" filepath="$PROJECT_DIR$/SAx_FirstSteps_DataTypesAndETC/Workshop4/Workshop4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SAx_FirstSteps_DataTypesAndETC/workshop_Arrays/workshop_Arrays.iml" filepath="$PROJECT_DIR$/SAx_FirstSteps_DataTypesAndETC/workshop_Arrays/workshop_Arrays.iml" />
+    </modules>
+  </component>
+</project>

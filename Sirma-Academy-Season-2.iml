@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/SA_02_04_2023" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA_06_04_2023Algoritms" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA_07_03_2023_CardGame" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA_08_03_2023_Inheritance" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA_11_03_2023_Polymorphism" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA_12_04_2023_DebugTesting" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA_14_03_2023" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA_16_03_2023_Debug" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA_19_03_2023_AbstractClassesAndIntefaces" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA_21_03_2023_DesignPatterns" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA_25.01.2023_Classes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA_26_03_2023" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA_28_03_2023" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

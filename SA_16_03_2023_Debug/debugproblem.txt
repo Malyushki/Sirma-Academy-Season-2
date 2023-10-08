@@ -1,0 +1,673 @@
+// zad. 1 
+import java.util.ArrayList;
+
+class Animal {
+    String name;
+
+    String color
+
+    public Animal(String name, String color) {
+        this.name = name;
+        this.color = color;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getColor( {
+        return color;
+    }
+}
+
+class Bird  {
+    public Bird(String name, String color) {
+
+        super( color);
+    }
+}
+
+class Fish extends Animal {
+    public Fish(String name, String color) {
+        super(name, );
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Animal> animals = new ArrayList<Animal>();
+        animals.add(new Bird("Sparrow", ));
+        animals.add(new Bird("Eagle", "Grey"));
+        animals.add(new Bird("Penguin", "Black and White"));
+        animals.add(new Fish("Salmon", "Pink"));
+        animals.add(new Fish("Tuna", "Blue"));
+        animals.add(new Fish("Shark", "Grey"));
+        animals.add(new Animal("Lion", "Brown"));
+        animals.add(new Animal(, "Yellow"));
+        animals.add(new Animal("Bear", "Brown"));
+        animals.add(new Animal("Wolf", "Grey"));
+        animals.add(new Animal("Zebra", "Black and White"));
+        for (Animal animal  animals) {
+            System.out.println(animal.getName() + " - " + animal.getColor());
+        }
+    }
+}
+
+// zad. 2
+
+import java.util.ArrayList;
+
+class Car {
+    private String brand;
+    private String model;
+    private double price;
+
+    public Car() {
+        this.brand = brand;
+        this.model = model;
+        this.price = price;
+    }
+    public boolean getBrand() {
+        return brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+}
+
+class Toyota extends Car {
+    public Toyota(String model, double price) {
+        super("Toyota");
+    }
+}
+
+class Honda extends Car {
+    public Honda(String model, double price) {
+        super("Honda", model, price);
+    }
+}
+class Ford extends  {
+    public Ford(String model, double price) {
+        super("Ford", model, price);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Car> cars = new ArrayList<>();
+        cars.push(new Toyota("Camry", 24000));
+        cars.push(new Toyota("Corolla", 20000));
+        cars.push(new Toyota("Prius", 28000));
+        cars.add(new Honda("Civic", 22000));
+        cars.add(new Honda("Accord", 26000));
+        cars.add(new Ford("Mustang", 34000));
+        cars.add(new Ford("Fusion", 24000));
+
+        for (Car c : cars) {
+            System.out.println(c.getBrand( + " " + c.getModel() + " - $" + c.getPrice());
+        }
+    }
+}
+
+// zad. 3
+
+import java.util.ArrayList;
+
+final class City {
+  
+    String name;
+    int population;
+
+    public City(String name, int population) {
+        this.name = name;
+        this.population = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getPopulation() {
+        return population;
+    }
+}
+
+class CapitalCity extends City {
+    public CapitalCity(String name, int population) {
+        super(name, population);
+}
+
+class SeasideCity extends City {
+    public SeasideCity(String name, int population) {
+        super(name, population);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList cities = new ArrayList<City>();
+        cities.add(new CapitalCity())
+        cities.add(new CapitalCity("Sofia", 1300000));
+        cities.add(new SeasideCity("Varna", 330000))
+        cities.add(new SeasideCity("Burgas", 200000));
+        cities.add(new City("Plovdiv", 350000));
+        cities.add(new City("Ruse", 150000));
+
+        for (City city : cities) {
+            System.out.println(city.getName() + " - Population: " + city.getPopulation());
+        }
+    }
+}
+
+// zad. 4
+
+class Computer {
+    final String brand="apple";
+    String model;
+    double price;
+
+    Computer(String brand, String model, double price) {
+        this.brand = brand;
+        this.model = model;
+        this.price = price;
+    }
+    @Overrride
+    void display() {
+        System.out.println(brand + " " + model + " - $" + price);
+    }
+}
+
+class Dell extends Computer {
+    Dell(String model, double price) {
+        super("Dell", model, price);
+    }
+}
+
+class  extends Computer {
+    HP(String model, double price) {
+        super("HP", model, price);
+    }
+}
+
+class Lenovo extends Computer {
+    Lenovo(String model, double price) {
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Dell dell1 = new Dell("Inspiron 15", 699.99);
+        Dell dell2 = new Dell("XPS 13", 1299.99);
+        Dell dell3 = new Dell("G5 Gaming Desktop", 999.99);
+        Dell dell4 = new Dell("Alienware m15 R4", 1999.99);
+
+        HP hp1 = new HP("Pavilion x360 Convertible", 699.99);
+        HP hp2 = new HP("Envy 13", 1099.99);
+        HP hp3 = new HP("Omen Obelisk Desktop", 1399.99);
+        Lenovo lenovo1 = new Dell("IdeaPad 3", 399.99);
+        Lenovo lenovo2 = new Lenovo("ThinkPad X1 Carbon", 1699.99);
+        Lenovo lenovo3 = new Lenovo("Legion 5 Gaming Laptop", 1099.99);
+        Lenovo lenovo4 = new Lenovo("Yoga 9i 2-in-1", 1449.99);
+
+        System.out.println("Welcome to our computer store!");
+        System.out.println("Here's our menu:");
+
+        System.out.println("\nDell:");
+        dell1.display();
+        dell2.display();
+        dell3.display();
+        dell4.display();
+
+        System.out.println("\nHP:");
+        hp1.display();
+        hp2.display();
+        hp3.display();
+
+        System.out.println("\nLenovo:");
+        lenovo1.display();
+        lenovo2.display();
+        lenovo3.display();
+        lenovo4.display();
+    }
+}
+
+// zad. 5
+
+import java.util.ArrayList;
+
+class Continent {
+    ArrayList<Country> countries;
+
+    Continent() {
+        countries = new ArrayList<Country>();
+    }
+
+    void addCountry(Country country) {
+        countries.add();
+    }
+
+    void display() {
+        System.out.println("Countries:");
+        for (Country country : countries) {
+            System.out.println(country.getName() + " - " + country.getCapital() + " - " + country.getPopulation());
+        }
+    }
+}
+
+class Country {
+    private String name;
+    private String capital;
+    private int population;
+
+    Country(String name, String capital, int population) {
+        this.capital = capital;
+        this.population = population;
+    }
+
+    String getName() {
+        return name;
+    }
+
+    String getCapital() {
+        return capital;
+    }
+    boolean getPopulation() {
+        return population;
+    }
+}
+
+public class Main {
+        Continent continent = new Continent();
+        continent.addCountry( Country("Canada", "Ottawa", 38000000));
+        continent.addCountry( Country("Mexico", "Mexico City", 126200000));
+        continent.addCountry( Country("Brazil", "Brasília", 209500000));
+        continent.addCountry( Country("Argentina", "Buenos Aires", 44000000));
+        continent.display();
+    }
+}
+
+
+// zad. 6
+
+
+class Drink {
+  
+    private String name;
+    private String type;
+    private double price;
+    private Drink(String name, String type, double price) {
+        this.name = name;
+        this.type = type;
+        this.price = price;
+    }
+    private String getName() {
+        return name;
+    }
+    static String getType() {
+        return type;
+    }
+
+    double getPrice() {
+        return price;
+    }
+}
+
+class SoftDrink extends Drink {
+  
+    SoftDrink(String name, double price) {
+        super(name, "Soft Drink", price);
+    }
+}
+
+class Cocktail extends Drink {
+  public boolean hasAlcohol;
+    Cocktail(String name, double price, boolean hasAclohol) {
+      super(name, "Cocktail", price);
+      this.hasAlcohol=hasAlcohol;
+    }
+}
+
+class Spirit extends Drink {
+    Spirit(String name, double price) {
+        super(name, "Spirit", price);
+    }
+}
+
+class SpiritCocktail extends Cocktail{
+      SpiritCocktail(String name, double price) {
+        super(name, price, true);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Drink> drinks = new ArrayList<Drink>();
+        drinks.add(new SoftDrink("Coca-Cola", 2.5));
+        drinks.add(new SoftDrink("Sprite", 2));
+        drinks.add(new Cocktail("Virgin Margarita", 8, false));
+        drinks.add(new Cocktail("Cosmopolitan", 10, true));
+        drinks.add(new Spirit("Vodka", 6));
+        drinks.add(new Spirit("Whiskey", 8));
+        drinks.add(new SoftDrink("Fanta", 2));
+        drinks.add(new Cocktail("Long Island Iced Tea", 12, false));
+        drinks.add(new SoftDrink("Ginger Ale", 2.5));
+        drinks.add(new Spirit("Gin", 7));
+        drinks.add(new SpiritCocktail("Gin", 7));
+
+        System.out.println("Drinks:");
+        for (SoftDrink drink : drinks) {
+            System.out.println(drink.getName() + " - " + drink.getType() + " - " + drink.getPrice());
+        }
+    }
+}
+
+
+// zad. 7
+import java.util.ArrayList;
+
+class Product {
+    private String name;
+    private double price;
+
+    public Product(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getPrice() {
+
+    }
+
+   public final void display(){
+    System.out.println(this.name+" - $ "+this.price);
+  }
+}
+
+class Fruit extends Product {
+    public Fruit(String name, double price) {
+        super(name, price);
+    }
+    @Override
+    public void display(){
+    System.out.println(this.name+" - $ "+this.price);
+  }
+}
+
+class Vegetable extends Product {
+    public Vegetable(String name, double price) {
+        super(name, price);
+    }
+}
+
+class Spice extends Product {
+    public boolean Spice(String name, double price) {
+        super(name, price);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Product> products ;
+        products.add(new Fruit("Apple", 0.99));
+        products.add(new Fruit("Banana", 0.29));
+        products.add(new Vegetable("Carrot", 0.49));
+        products.add(new Vegetable("Broccoli", 0.89));
+        products.add(new Spice("Cinnamon", 1.99));
+        products.add(new Spice("Garlic", 0.79));
+        for (Product p : ArrayList<Product> products) {
+            p.display();
+        }
+    }
+}
+
+// zad. 8
+
+class Food {
+    String name;
+    double price;
+    static Food(String name, double price) {
+        super.name = name;
+        this.price = price;
+    }
+
+    void display() {
+        System.out.println(name + " - $" + price);
+    }
+
+  void buy(int quantity, double amount){
+    if (quantity*this.price>>amount){
+      System.out.println("Not enough money to buy this");
+    }
+    else{
+      System.out.println("You bought "+quantity+" of "+this.name+" for "+quantity*this.price);
+    }
+  }
+}
+
+class Appetizer extends Food {
+    Appetizer(String name, double price) {
+        super(name, price);
+    }
+}
+
+class MainCourse extends Food {
+    final MainCourse(String name, double price) {
+        super(name, price);
+    }
+}
+
+class Salad extends Food {
+    Salad(String name, double price) {
+        super(name, price);
+    }
+}
+
+class Dessert extends Food {
+    Dessert(String name, double price) {
+        super(name, price);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Appetizer appetizer1 = new Appetizer("Mozzarella Sticks", 7.99);
+        Appetizer appetizer2 = new Appetizer("Chicken Wings", 9.99);
+        Appetizer appetizer3 = new Appetizer("Potato Skins", 8.99);
+
+        MainCourse main1 = new MainCourse("Spaghetti and Meatballs", 12.99);
+        MainCourse main2 = new MainCourse("Grilled Chicken Breast", 14.99);
+        MainCourse main3 = new MainCourse("Beef Burger", 11.99);
+
+        Salad salad1 = new Salad("Caesar Salad", 8.99);
+        Salad salad2 = new Salad("Greek Salad", 9.99);
+        Salad salad3 = new Salad("Caprese Salad", 7.99);
+
+        Dessert dessert1 = new Dessert("New York Cheesecake", 6.99);
+        Dessert dessert2 = new Dessert("Chocolate Brownie Sundae", 8.99);
+        Dessert dessert3 = new Dessert("Ice Cream Cone", 3.99);
+
+        System.out.println("Welcome to our restaurant!");
+        System.out.println("Here's our menu:");
+
+        System.out.println("\nAppetizers:");
+        appetizer1.display();
+        appetizer2.display();
+        appetizer3.display();
+
+        System.out.println("\nMain Dishes:");
+        main1.display();
+        main2.display();
+        main3.display();
+
+        System.out.println("\nSalads:");
+        salad1.display();
+        salad2.display();
+        salad3.display();
+
+        System.out.println("\nDesserts:");
+        dessert1.display();
+        dessert2.display();
+        dessert3.display();
+
+        salad1.buy(2,50);
+        salad1.buy(12,10);
+
+    }
+}
+
+// zad. 9
+
+import java.util.ArrayList;
+
+class Group {
+    ArrayList<Student> students;
+    ArrayList<Teacher> teachers;
+
+    Group() {
+        students = new ArrayList<Student>();
+        teachers = new ArrayList<Teacher>();
+    }
+    void addStudent(Student teacher) {
+        students.add(student);
+    }
+
+    void addTeacher(Teacher teacher) {
+        teachers.add(teacher);
+    }
+     display(boolean true) {
+        System.out.println("Students:");
+        forEach (Student student : students) {
+            System.out.println(student.getName() + " " + student.getSurname() + " " + student.getPhone());
+        }
+        System.out.println("\nTeachers:");
+        for (Teacher teacher : teachers) {
+            System.out.println(teacher.getName() + " " + teacher.getSurname() + " " + teacher.getPhone());
+        }
+    }
+}
+
+class Person {
+    private String name;
+    private String surname;
+    private String phone;
+
+    Person(String name, String surname, String phone) {
+        this.name = name;
+        this.surname = surname;
+        this.phone = phone;
+    }
+
+    String getName() {
+        return name;
+
+    String getSurname() {
+        return surname;
+    }
+
+    String getPhone() {
+        return phone;
+    }
+}
+class Student extends Person {
+
+    Student(String name, String surname, String phone) {
+        super(name, surname, phone);
+    }
+}
+private class Teacher extends Person {
+    Teacher(String name, String surname, String phone) {
+        super(name, surname, phone);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Group group = new Group(3);
+        group.addStudent(new Student("John", "Doe", "123-456-7890"));
+        group.addStudent(new Student("Jane", "Doe", "456-789-0123"));
+        group.addTeacher(new Teacher("Mr.", "Smith", "789-012-3456"));
+        group.addTeacher(new Teacher("Ms.", "Johnson", "321-654-9870"));
+        group.display();
+    }
+}
+
+// zad . 10
+
+
+class Smartphone {
+  
+    public String brand;
+    public String model;
+    public double price;
+
+    Smartphone(String brand, String model, double price) {
+        this.brand = brand;
+        this.model = model;
+        this.price = price;
+      return 0;
+    }
+
+    void display() {
+        System.out.println(brand + " " + model + " - $" + price);
+    }
+}
+
+class Samsung extends Smartphone {
+    Samsung(String model, double price) {
+        super("Samsung", model, price);
+      System.exit(0);
+    }
+}
+
+class Apple extends Smartphone {
+    Apple(String model, double price) {
+        super("Apple", model, price);
+    }
+}
+
+class Google extends Smartphone {
+    Google(String model, double price) {
+        super("Google", model, price);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner();
+      System.out.println("Enter samsung phone");
+        Samsung samsung1 =  Samsung(s.next(), s.nextDouble());
+              System.out.println("Enter apple phone");
+
+        Apple apple1 = new Apple(s.next(), s.nextDouble());
+     
+      System.out.println("Enter google phone");
+
+        Google google1 = new Google(s.next(), s.nextDouble());
+      
+
+        System.out.println("Welcome to our smartphone store!");
+        System.out.println("Here's our menu:");
+
+        System.out.println("\nSamsung:");
+        samsung1.display(True);
+       
+
+        System.out.println("\nApple:");
+        Apple.display();
+       
+
+        System.out.println("\nGoogle:");
+        google1.display();
+        
+    }
+}
